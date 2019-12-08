@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gupter|Permanent+Marker&display=swap" rel="stylesheet">
     <title>My Webpage</title>
     <style type="text/css">
         .container {
@@ -36,6 +38,17 @@
             background-color: #ddd;
             min-height: 500px;
             overflow: auto;
+        }
+
+        .content h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family: 'Gupter', serif;
+            font-family: 'Permanent Marker', cursive;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         .footer {
@@ -92,7 +105,6 @@
             background-color: #eee;
             border: 1px solid #ccc;
             text-align: left;
-            position: absolute;
             top: 20px;
             left: 0;
             display: none;
@@ -100,6 +112,36 @@
 
         .menu ul li:hover ul.submenu {
             display: block;
+        }
+
+        .jumbotron {
+            font-family: 'Gupter', serif;
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-color: #aaa;
+            background-image: url(https://images.unsplash.com/photo-1515111293107-b0cd6448f5f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4f56141064dbe63db663bb7a2c73b71&auto=format&fit=crop&w=1350&q=80);
+            background-size: cover;
+            position: relative;
+            z-index: -1;
+        }
+
+        .jumbotron h2,
+        .jumbotron p {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
         }
     </style>
 </head>
@@ -127,8 +169,16 @@
             </div>
         </div>
 
+        <div class="jumbotron">
+            <div class="overlay"></div>
+            <h2>Welcome to My Homepage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor necessitatibus quae voluptate explicabo
+                architecto fugiat asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente modi, ut harum
+                aliquam accusamus unde.</p>
+        </div>
+
         <div class="content">
-            <h2>My Products</h2>
+            <h1>My Products</h1>
 
             <div class="thumbnail">
                 <img
